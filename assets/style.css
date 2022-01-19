@@ -1,0 +1,18 @@
+:root{
+    --purple: #CFB9FF; 
+    --neon: #DCFF79; 
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.jumbotron {
+    color: var(--neon);
+    background-color: var(--purple);
+    height: 100vh;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', cursive;
+} 
