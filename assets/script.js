@@ -19,16 +19,12 @@ const getRepos = () => {
 
 const displayItems = data => {
 
-
-    for (let i=0; i<3; i++){ 
-
-        //loop through response data and grab the bits we need
+    for (let i=0; i<3; i++){   //loop through response data and grab the values we need    
         let siteName = data[i].name;
         let siteDescription = data[i].description;
         let repoLink = data[i].html_url; 
         let siteLink = `https://laurendarrimon.github.io/${data[i].name}`;
-
-    
+   
         let portfolioItem = $('<div>'); //create the div that will hold the info for each item 
 
         let portfolioItemHTML = //fill the div with html elements from response data 
@@ -56,18 +52,12 @@ const displayItems = data => {
                     </a>
                 </div>
             </div>
+            `;
+        portfolioItem.append(portfolioItemHTML);//append HTML to portolfio item
 
-            `
-        //append HTML to portolfio item
-        portfolioItem.append(portfolioItemHTML);
-
-        portfolioItem.addClass("col-md-5 col-lg-4");
-
-
-        //append portfolio item to portfolio section div 
-        portfolioSection.append(portfolioItem);
-
+        portfolioItem.addClass("col-md-5 col-lg-4"); //add bootstrap grid classes to each portfolio item
         
+        portfolioSection.append(portfolioItem); //append portfolio item to portfolio section div 
     }
 }
 
