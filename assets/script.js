@@ -1,3 +1,4 @@
+//point to the div where we will append all of the 
 let portfolioSection = $("#portfolio-list-section");
 
 //use fat arrow syntax to declare function that will get information about my repos from Github
@@ -6,7 +7,7 @@ const getRepos = () => {
   // API endpoint URL of starred Github repos at my user name 
   let requestUrl = 'https://api.github.com/users/laurendarrimon/starred';
 
-  fetch(requestUrl)
+  fetch(requestUrl) //call to get repo information 
     .then(function (response) { 
       return response.json();  
     })
@@ -26,8 +27,6 @@ const displayItems = data => {
         let siteDescription = data[i].description;
         let repoLink = data[i].html_url; 
         let siteLink = `https://laurendarrimon.github.io/${data[i].name}`;
-
-        
 
     
         let portfolioItem = $('<div>'); //create the div that will hold the info for each item 

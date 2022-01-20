@@ -59,7 +59,7 @@ section{
 #bio-box{
     background-color: var(--neon);
     color:black;
-    transform: translate(0, 70px);
+    transform: translate(0, 90px);
     padding:40px;
 }
 
@@ -72,11 +72,10 @@ button{
 }
 
 
-
 #portfolio{
     background-color: white;
     color:black;
-    padding: 50px;
+    padding: 80px;
     height: auto;
 }
 
@@ -85,10 +84,9 @@ button{
     margin-top: 20px;
     background-color: black;
     color:white;
-    
 }
 
-/*this div envelops the Iframes*/
+/*this div envelops the iframes*/
 .click-frame {
     position:relative;
 }
@@ -103,6 +101,10 @@ a clickable link*/
     width:250px; 
     height:250px; 
     z-index:5;
+}
+
+.neon{
+    color: var(--neon);
 }
 
 #footer{
