@@ -59,7 +59,7 @@ section{
 #bio-box{
     background-color: var(--neon);
     color:black;
-    transform: translate(0, 50px);
+    transform: translate(0, 70px);
     padding:40px;
 }
 
@@ -76,6 +76,33 @@ button{
 #portfolio{
     background-color: white;
     color:black;
+    padding: 50px;
+    height: auto;
+}
+
+.portfolio-items{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: black;
+    color:white;
+    
+}
+
+/*this div envelops the Iframes*/
+.click-frame {
+    position:relative;
+}
+
+/*create an overlay for anchor element that will cover iframe so that whole iframe is 
+a clickable link*/
+.frame-link {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    display:inline-block; 
+    width:250px; 
+    height:250px; 
+    z-index:5;
 }
 
 #footer{

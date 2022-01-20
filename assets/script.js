@@ -34,25 +34,35 @@ const displayItems = data => {
 
         let portfolioItemHTML = //fill the div with html elements from response data 
             `
-            <div>
-                <a href="${siteLink}">
+            <div class="portfolio-items">
+                <a href="${siteLink}" target="_blank">
                     <h3> ${siteName}</h3>
                 </a>
-                <br />
-                <a href="${repoLink}">
-                    <h3>Code Repo</h3>
+                <a href="${repoLink}" target="_blank">
+                    <h3>Code</h3>
                  </a>
                 <p> ${siteDescription} </p>
-                <iframe 
-                    src=https://laurendarrimon.github.io/${siteName}>
-                <iframe>
+                <div class="click-frame">
+                    <iframe 
+                        src="https://laurendarrimon.github.io/${siteName}"
+                        width="250px"
+                        height="250px"
+                        scrolling="no"
+                        frameBorder="0" >
+                    </iframe>
+                    <a 
+                        class="frame-link" 
+                        target="_blank"
+                        href="https://laurendarrimon.github.io/${siteName}">
+                    </a>
+                </div>
             </div>
 
             `
         //append HTML to portolfio item
         portfolioItem.append(portfolioItemHTML);
 
-        portfolioItem.addClass("col-md-4");
+        portfolioItem.addClass("col-md-5 col-lg-4");
 
 
         //append portfolio item to portfolio section div 
