@@ -4,7 +4,6 @@
     --neon: #DCFF79; 
 }
 
-
 body {
     margin:0;
     box-sizing: border-box;
@@ -34,8 +33,6 @@ a h2{
     background-color: black;
     padding:30px;
 }
-
-
 
 /*style each div section*/
 #sec1 {
