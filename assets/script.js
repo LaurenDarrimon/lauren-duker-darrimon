@@ -1,4 +1,4 @@
-let portfolioSection = $("#portfolio");
+let portfolioSection = $("#portfolio-list-section");
 
 //use fat arrow syntax to declare function that will get information about my repos from Github
 const getRepos = () => {
@@ -7,20 +7,18 @@ const getRepos = () => {
   let requestUrl = 'https://api.github.com/users/laurendarrimon/starred';
 
   fetch(requestUrl)
-    .then(function (response) {
-      return response.json();
+    .then(function (response) { 
+      return response.json();  
     })
-    .then(function (data) {
-
-        
+    .then(function (data) {   
         console.log (data); //explore response data
-
-        
-    displayItems(data);
+    displayItems(data); //pass response data to display function
     });
 }
 
 const displayItems = data => {
+
+
     for (let i=0; i<3; i++){ 
 
         //loop through response data and grab the bits we need
@@ -29,22 +27,35 @@ const displayItems = data => {
         let repoLink = data[i].html_url; 
         let siteLink = `https://laurendarrimon.github.io/${data[i].name}`;
 
-
-        //create the various elements 
-
-
-        //fill the elements
-
-
-        //append elements to item div
-
-
-        //append item div to portolfio item section div
-
-
-
-
         
+
+    
+        let portfolioItem = $('<div>'); //create the div that will hold the info for each item 
+
+        let portfolioItemHTML = //fill the div with html elements from response data 
+            `
+            <div class="col-12 col-md-3 portfolio-item">
+                <iframe 
+                    src=https://laurendarrimon.github.io/${siteName}>
+                <iframe>
+                <a href="${siteLink}">
+                    <h3>${siteName}</h3>
+                </a>
+                <br />
+                <a href="${repoLink}">
+                    <h3>Code </h3>
+                </a>
+                <p> ${siteDescription} </p>
+            </div>
+
+            `
+        //append HTML to portolfio item
+        portfolioItem.append(portfolioItemHTML);
+
+
+        //append portfolio item to portfolio section div 
+        portfolioSection.append(portfolioItem);
+
         
     }
 }
