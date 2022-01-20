@@ -10,23 +10,30 @@ body {
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
     background-color: black;
+    color:white;
+}
+
+a {
+    color: var(--purple);
+}
+
+a:hover{
+    color: var(--neon);
 }
 
 h1, h2, h3 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
 } 
 
 h1{
     font-size:50px;
 }
 
-#sec1 #sec2 {
-    vertical-align: top;
-    margin: 0 !important;
-
+a h2{
+    color: var(--neon);
 }
 
-/*style each jumbotron*/
+/*style each div section*/
 #sec1 {
     color: var(--neon);
     background-color: var(--purple);
@@ -42,6 +49,26 @@ h1{
     height: 75vh;
 
 }
+
+.row div{
+    padding: 40px;
+}
+
+#bio-box{
+    background-color: var(--neon);
+    color:black;
+    transform: translate(0, 50px);
+}
+
+button{
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    padding:20px;
+}
+
+
 
 
 
