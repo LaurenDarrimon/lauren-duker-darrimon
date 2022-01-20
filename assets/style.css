@@ -1,18 +1,47 @@
+/*brand colors*/
 :root{
     --purple: #CFB9FF; 
     --neon: #DCFF79; 
 }
 
-body {
-    font-family: 'Manrope', sans-serif;
-}
 
-.jumbotron {
-    color: var(--neon);
-    background-color: var(--purple);
-    height: 100vh;
+body {
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    background-color: black;
 }
 
 h1, h2, h3 {
     font-family: 'Bebas Neue', cursive;
 } 
+
+h1{
+    font-size:50px;
+}
+
+#sec1 #sec2 {
+    vertical-align: top;
+    margin: 0 !important;
+
+}
+
+/*style each jumbotron*/
+#sec1 {
+    color: var(--neon);
+    background-color: var(--purple);
+    height: 75vh;
+
+}
+
+#sec2 {
+    color: var(--neon);
+    background: url('images/keyboard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+
+}
+
+
+
