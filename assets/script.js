@@ -1,10 +1,9 @@
 let portfolioSection = $("#portfolio");
 
-
 //use fat arrow syntax to declare function that will get information about my repos from Github
 const getRepos = () => {
 
-  // URL of starred repos
+  // API endpoint URL of starred Github repos at my user name 
   let requestUrl = 'https://api.github.com/users/laurendarrimon/starred';
 
   fetch(requestUrl)
@@ -13,17 +12,41 @@ const getRepos = () => {
     })
     .then(function (data) {
 
-        //explore response data
-        console.log (data);
+        
+        console.log (data); //explore response data
 
-        for (let i=0; i<3; i++){
-            //loop through response data for certain values. 
-            console.log(data[i].url)
-            console.log(data[i].description)
-            console.log(data[i].name)
-        }
-
+        
+    displayItems(data);
     });
+}
+
+const displayItems = data => {
+    for (let i=0; i<3; i++){ 
+
+        //loop through response data and grab the bits we need
+        let siteName = data[i].name;
+        let siteDescription = data[i].description;
+        let repoLink = data[i].html_url; 
+        let siteLink = `https://laurendarrimon.github.io/${data[i].name}`;
+
+
+        //create the various elements 
+
+
+        //fill the elements
+
+
+        //append elements to item div
+
+
+        //append item div to portolfio item section div
+
+
+
+
+        
+        
+    }
 }
 
 getRepos();
