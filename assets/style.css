@@ -47,13 +47,19 @@ a h2{
     background: url('images/keyboard.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 85vh;
+    
+    
 
 }
 
 section{
     padding: 40px;
     height: 75vh;
+}
+
+#lauren{
+    margin:20px; 
 }
 
 #bio-box{
@@ -63,12 +69,17 @@ section{
     padding:40px;
 }
 
+#meet{
+    transform: translate(0, 120px);
+}
+
 button{
     background-color: black;
     color: white;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
     padding:20px;
+    margin: botttom 30px;
 }
 
 
@@ -115,5 +126,23 @@ a clickable link*/
 }
 
 
+@media (min-width: 768px){
+    #sec2 {
+        height: 70vh;
+    }
 
+    #meet{
+        transform: translate(0, 0);
+    }
+
+    #bio-box{
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px){
+    #bio-box{
+        max-width: 500px;
+    }
+}
 
