@@ -87,3 +87,7 @@ A digital portfolio is not very exciting without images of the deployed sites. H
 - [Link to Portfolio Site](https://laurendarrimon.github.io/lauren-duker-darrimon/)
 - [Link to Github](https://github.com/LaurenDarrimon)
 - [Link to LinkedIn](https://www.linkedin.com/in/lauren-lalita-duker-9537b1201/)
+
+
+## License
+[MIT Open Source Software](/LICENSE.txt)
