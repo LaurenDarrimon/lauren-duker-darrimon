@@ -1,5 +1,5 @@
 # lauren-duker-darrimon
-Lauren Duker Darrimon - Web Developer &amp; Designer Portfolio Site
+## Web Developer &amp; Designer Portfolio Site
 
 #### Jump to: 
 * [Description](#description)
