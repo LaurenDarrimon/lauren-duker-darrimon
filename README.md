@@ -15,7 +15,7 @@ This site showcases Lauren Duker Darrimon Web Developer, contact, resume, and a 
 
 <br><br>
 
-![Lauren Duker Darrimon Portfolio](./assets/images/weather-app-screenshot.jpg)
+![Lauren Duker Darrimon Portfolio](./assets/images/mobile-portfolio.gif)
 
 <br><br>
 
@@ -57,7 +57,12 @@ The portfolio section utilizes the data from Lauren's [Git Hub](https://docs.git
 ### Dynamic Content 
 The portfolio section is populated by the first three of the user's starred code repositories. As new applications are developed and deployed, all we have to do is star new repos on GitHub, and the portfolio will automatically update: 
 
+<br>
 
+![Starred repos dynamically populate](./assets/images/starred-repos.gif)
+
+
+<br>
 
 ### Clickable Visual of Deployed Sites
 A digital portfolio is not very exciting without images of the deployed sites. However, hard-coding the image in would have limited the dynamic data population. As a solution, I included an iframe of the deployed site, with an anchor link that was resized via css to cover the iframe. 
